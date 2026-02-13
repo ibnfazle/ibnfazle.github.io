@@ -27,7 +27,7 @@ const Home = () => {
       {/* Banner */}
       <div className="w-full aspect-[4/1] overflow-hidden max-h-[200px] xl:max-h-[230px] 2xl:max-h-[260px] relative">
         <img 
-          src="/banner.svg" 
+          src="/banner.png" 
           alt="" 
           className="w-full h-full object-cover"
         />
