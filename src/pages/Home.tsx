@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { Clock } from "lucide-react";
 import Navigation from "@/components/Navigation";
 import { getLatestPosts } from "@/data/posts";
+import ThaqibLogo from "@/assets/thaqib.svg?react";
 
 // Calculate estimated read time based on word count
 const calculateReadTime = (content: string): number => {
@@ -32,10 +33,9 @@ const Home = () => {
           className="w-full h-full object-cover"
         />
         <div className="absolute inset-0 flex items-center justify-center">
-          <img 
-            src="/thaqib.svg" 
-            alt="Thaqib" 
-            className="h-[80%] max-h-[240px] xl:max-h-[280px] 2xl:max-h-[320px] w-auto object-contain"
+          <ThaqibLogo
+            aria-hidden
+            className="block h-[80%] w-auto max-h-[120px] sm:max-h-[160px] md:max-h-[200px] xl:max-h-[280px] 2xl:max-h-[320px] max-w-[90vw] flex-shrink-0 select-none"
           />
         </div>
       </div>
